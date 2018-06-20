@@ -2,6 +2,12 @@
   "name": "webrtc-codelab",
   "version": "0.0.1",
   "description": "WebRTC codelab",
+  "private": true,
+  "license": "MIT",
+  "author": "Microsoft",
+  "engines": {
+    "node": ">=6.9.1"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",

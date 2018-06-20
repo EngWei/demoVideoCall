@@ -84,4 +84,5 @@ io.sockets.on('connection', function (socket) {
 
 });
 
-server.listen(3319, () => console.log('Example app listening on port 3319!'));
+var port = process.env.PORT || 1337;
+server.listen(port, () => console.log(`Example app listening on port ${port}!`));
