@@ -12,7 +12,7 @@ var options = {
   key: fs.readFileSync('./cert/key.pem'),
   cert: fs.readFileSync('./cert/cert.pem')
 };
-header.bind(app)
+// header.bind(app)
 
 app.use(express.static('./'))
 
