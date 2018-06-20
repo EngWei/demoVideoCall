@@ -1,6 +1,7 @@
 'use strict';
 const express = require('express')
-const https = require('https');
+// const https = require('https');
+const http = require('http');
 const header = require('./index_header')
 var fs = require('fs')
 
@@ -22,7 +23,7 @@ app.use(express.static('./'))
 var socketIO = require('socket.io');
 
 
-var server = https.createServer(options, app)
+var server = http.createServer(app)
 
 var io = socketIO.listen(server);
 io.sockets.on('connection', function (socket) {
@@ -84,5 +85,5 @@ io.sockets.on('connection', function (socket) {
 
 });
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 3319;
 server.listen(port, () => console.log(`Example app listening on port ${port}!`));
