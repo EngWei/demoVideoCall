@@ -126,11 +126,11 @@ var constraints = {
 
 console.log('Getting user media with constraints', constraints);
 
-if (location.hostname !== 'localhost') {
-  requestTurn(
-    'https://demo-support-video.azurewebsites.net/'
-  );
-}
+// if (location.hostname !== 'localhost') {
+//   requestTurn(
+//     'https://demo-support-video.azurewebsites.net/'
+//   );
+// }
 
 function maybeStart() {
   console.log('>>>>>>> maybeStart() ', isStarted, localStream, isChannelReady);
