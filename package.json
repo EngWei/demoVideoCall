@@ -1,0 +1,11 @@
+{
+  "name": "webrtc-codelab",
+  "version": "0.0.1",
+  "description": "WebRTC codelab",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "node-static": "^0.7.10",
+    "socket.io": "^2.1.1"
+  }
+}
